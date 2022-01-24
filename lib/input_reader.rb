@@ -11,7 +11,12 @@ class InputReader
     return @items if @items
 
     @items = []
-    File.readlines(@path).each do |line|
+    lines = File.readlines(@path)
+    headers = lines.first.split(',').map(&:strip)
+    if headers[0].downcase != 'quantity' || headers[1].downcase != 'product' || headers[2].downcase != 'price'
+      raise 'Unexpected input header'
+    end
+    lines.drop(1).each do |line|
       values = line.split(',')
       next if values.length != 3
 

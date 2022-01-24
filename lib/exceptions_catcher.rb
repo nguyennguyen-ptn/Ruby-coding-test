@@ -1,9 +1,9 @@
 class ExceptionsCatcher
   def is_txt_file?(path)
-    if path.split(//).last(3).join == 'txt'
+    if path.split(//).last(3).join == 'txt' || path.split(//).last(3).join == 'csv'
       true
     else
-      puts 'This is not a text file'
+      puts 'This is not a text or csv file'
       false
     end
   end

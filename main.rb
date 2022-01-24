@@ -1,4 +1,8 @@
-require_relative "./lib/application"
+require_relative './lib/application'
 
-# Application.run!("inputs/input1.txt")
-Application.run!("inputs/input1.json")
+begin
+  Application.run!('inputs/input1.txt')
+rescue RuntimeError => e
+  puts 'An eror occurs while running the application:'
+  puts e.message
+end
