@@ -1,0 +1,27 @@
+[
+    {
+        "quantity": 1,
+        "name": "book",
+        "price": 12.49
+    },
+    {
+        "quantity": 1,
+        "name": "music cd",
+        "price": 14.99
+    },
+    {
+        "quantity": 2,
+        "name": "chocolate bar",
+        "price": 0.852
+    },
+    {
+        "quantity": 1,
+        "name": "imported box of chocolates",
+        "price": 10.00
+    },
+    {
+        "quantity": 2,
+        "name": "batch of imported bottles of perfume",
+        "price": 47.50
+    }
+]
