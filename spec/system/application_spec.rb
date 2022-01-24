@@ -1,6 +1,5 @@
 require_relative '../spec_helper'
 require_relative '../../lib/application'
-require_relative '../../lib/exceptions_catcher'
 
 describe Application do
   describe '#run!' do

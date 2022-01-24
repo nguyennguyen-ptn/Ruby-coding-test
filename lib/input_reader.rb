@@ -16,6 +16,7 @@ class InputReader
     if headers[0].downcase != 'quantity' || headers[1].downcase != 'product' || headers[2].downcase != 'price'
       raise 'Unexpected input header'
     end
+
     lines.drop(1).each do |line|
       values = line.split(',')
       next if values.length != 3

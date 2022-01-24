@@ -14,7 +14,7 @@ describe InputReader do
       expect(subject[0].price).to eq(12.49)
     end
 
-    context "invalid input" do
+    context 'invalid input' do
       let(:path) { File.join(File.dirname(__FILE__), '../inputs/invalid.csv') }
 
       it { expect { subject }.to raise_error(RuntimeError) }
